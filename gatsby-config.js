@@ -1,3 +1,4 @@
+/* eslint-disable */ // getting rid of camelcase check
 module.exports = {
   siteMetadata: {
     title: `MadMinutes`,
