@@ -9,6 +9,7 @@
     "framer": "^1.1.5",
     "gatsby": "^2.17.4",
     "gatsby-image": "^2.2.29",
+    "gatsby-plugin-less": "^3.0.12",
     "gatsby-plugin-manifest": "^2.2.23",
     "gatsby-plugin-offline": "^3.0.17",
     "gatsby-plugin-react-helmet": "^3.1.13",
@@ -16,10 +17,12 @@
     "gatsby-plugin-typescript": "^2.1.15",
     "gatsby-source-filesystem": "^2.1.33",
     "gatsby-transformer-sharp": "^2.3.0",
+    "less": "^3.10.3",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
+    "semantic-ui-less": "^2.4.1",
     "semantic-ui-react": "^0.88.1"
   },
   "devDependencies": {
