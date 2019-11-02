@@ -1,9 +1,5 @@
-
-@import "../../semantic/site/globals/site.variables";
-
-.b {
-    border: 1px solid pink;
-}
+@firstHalfLogoColor: #ec501f; /* saturated red-orange */
+@secondHalfLogoColor: #f5720f; /* orange */
 
 #madMinutesLogo {
   display: flex;
@@ -14,10 +10,10 @@
   font-family: "Faster One", cursive;
 
   & .firstHalf {
-    color: @strongHighlight;
+    color: @firstHalfLogoColor;
   }
   & .secondHalf {
-    color: @weakHighlight;
+    color: @secondHalfLogoColor;
   }
   & .icon {
     width: 1.5em;

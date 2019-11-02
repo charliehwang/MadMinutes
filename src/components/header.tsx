@@ -17,13 +17,13 @@ interface Props {
 
 const Header = ({ siteTitle }) => (
   <header>
-    <Menu fixed="top">
-      <Container>
-        <MadMinutesLogo />
-        {/* <Menu.Item as="a" header> */}
-        {/* </Menu.Item> */}
-      </Container>
-    </Menu>
+    {/* <Menu fixed="top"> */}
+    <Container>
+      <MadMinutesLogo />
+      {/* <Menu.Item as="a" header> */}
+      {/* </Menu.Item> */}
+    </Container>
+    {/* </Menu> */}
   </header>
 )
 
