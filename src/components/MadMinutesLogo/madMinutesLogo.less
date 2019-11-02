@@ -1,0 +1,29 @@
+
+@import "../../semantic/site/globals/site.variables";
+
+.b {
+    border: 1px solid pink;
+}
+
+#madMinutesLogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: baseline;
+  font-size: 200%;
+  font-family: "Faster One", cursive;
+
+  & .firstHalf {
+    color: @strongHighlight;
+  }
+  & .secondHalf {
+    color: @weakHighlight;
+  }
+  & .icon {
+    width: 1.5em;
+    z-index: -1;
+    position: relative;
+    top: 0.1em;
+    left: -0.6em;
+  }
+}
