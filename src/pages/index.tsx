@@ -10,10 +10,13 @@ import { Button } from "semantic-ui-react"
 // import "semantic-ui-less/semantic.less"
 import "semantic-ui-less/semantic.less"
 
+import ProblemGroups from "../components/ProblemGroups/ProblemGroups"
+
 const IndexPage = () => (
   <Layout>
     <SEO></SEO>
-    <div>{/* <Container text style={{ marginTop: "7em" }}></Container> */}</div>
+    {/* <div><Container text style={{ marginTop: "7em" }}></Container></div> */}
+    <ProblemGroups />
   </Layout>
 )
 
