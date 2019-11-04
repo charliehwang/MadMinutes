@@ -4,18 +4,18 @@ export const maxTime: string = "1:15";  // 1:30 = 1 minute and 30 seconds
 export const maxPass50: number = 50;  // maxPass for 50 question quizzes
 export const maxTime50: string = "2:30";  // maxTime for 50 question quizzes
 
-enum ProblemGroup {
+enum ProblemType {
   MULTIPLICATION = 'Multiplication',
   DIVISION = 'Division',
   ADDITION = 'Addition',
   SUBTRACTION = 'Subtraction',
 }
 
-export const defaultProblemGroupOrder: Array<ProblemGroup> = [
-  ProblemGroup.MULTIPLICATION,
-  ProblemGroup.DIVISION,
-  ProblemGroup.ADDITION,
-  ProblemGroup.SUBTRACTION,
+export const defaultProblemTypeOrder: Array<ProblemType> = [
+  ProblemType.MULTIPLICATION,
+  ProblemType.DIVISION,
+  ProblemType.ADDITION,
+  ProblemType.SUBTRACTION,
 ]
 
 export interface IProblemData {
@@ -24,8 +24,8 @@ export interface IProblemData {
 type ProblemGroupDictionary<T extends string, U> = {
   [K in T]: U;
 };
-export const data: ProblemGroupDictionary<ProblemGroup, IProblemData> = {
-  [ProblemGroup.MULTIPLICATION]: {
+export const data: ProblemGroupDictionary<ProblemType, IProblemData> = {
+  [ProblemType.MULTIPLICATION]: {
     "A": [
       [7, 1], [1, 4], [9, 1], [3, 1], [1, 8], [1, 2], [5, 1], [1, 6], [1, 1], [2, 1],
       [1, 1], [1, 3], [8, 1], [1, 7], [4, 1], [1, 9], [6, 1], [5, 1], [1, 3], [6, 1],
@@ -317,7 +317,7 @@ export const data: ProblemGroupDictionary<ProblemGroup, IProblemData> = {
     ]
   }, //end multiplication
 
-  [ProblemGroup.DIVISION]: {
+  [ProblemType.DIVISION]: {
     "A": [
       [5, 1], [9, 1], [3, 1], [7, 1], [4, 1], [6, 1], [6, 1], [4, 1], [8, 1], [9, 1],
       [9, 1], [7, 1], [6, 1], [7, 1], [8, 1], [5, 1], [6, 1], [4, 1], [6, 1], [8, 1],
@@ -534,7 +534,7 @@ export const data: ProblemGroupDictionary<ProblemGroup, IProblemData> = {
     ],
   }, // end division
 
-  [ProblemGroup.ADDITION]: {
+  [ProblemType.ADDITION]: {
     "A": [
       [3, 1], [1, 2], [1, 3], [3, 1], [2, 1], [1, 2], [3, 1], [1, 2], [2, 1], [2, 1],
       [1, 2], [3, 1], [1, 2], [2, 1], [1, 2], [1, 3], [3, 1], [3, 1], [1, 2], [3, 1],
@@ -714,7 +714,7 @@ export const data: ProblemGroupDictionary<ProblemGroup, IProblemData> = {
   },  //end addition
 
 
-  [ProblemGroup.SUBTRACTION]: {
+  [ProblemType.SUBTRACTION]: {
     "A": [
       [3, 2], [3, 1], [4, 3], [3, 1], [3, 2], [4, 3], [4, 1], [3, 1], [3, 2], [3, 1],
       [4, 1], [3, 2], [3, 1], [4, 1], [4, 3], [4, 1], [3, 1], [3, 2], [3, 1], [4, 3],

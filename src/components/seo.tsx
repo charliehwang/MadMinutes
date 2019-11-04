@@ -73,6 +73,10 @@ function SEO({ description, lang, meta, title }) {
         href="https://fonts.googleapis.com/css?family=Faster+One"
         rel="stylesheet"
       ></link>
+      <link
+        href="https://fonts.googleapis.com/css?family=Oswald"
+        rel="stylesheet"
+      ></link>
     </Helmet>
   )
 }

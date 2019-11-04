@@ -8,7 +8,7 @@ import { Container, Menu } from "semantic-ui-react"
 import "semantic-ui-less/semantic.less"
 import "./header.less"
 
-import MadMinutesLogo from "./MadMinutesLogo/madMinutesLogo"
+import MadMinutesLogo from "./MadMinutesLogo"
 
 
 interface Props {

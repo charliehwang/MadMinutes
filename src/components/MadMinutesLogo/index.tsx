@@ -6,7 +6,7 @@ import logo from "./zach-dinosaur.svg"
 import { Container, Menu } from "semantic-ui-react"
 
 import "semantic-ui-less/semantic.less"
-import "./madMinutesLogo.less"
+import "./MadMinutesLogo.less"
 
 
 interface Props {
