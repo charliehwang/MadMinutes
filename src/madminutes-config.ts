@@ -18,11 +18,11 @@ export const defaultProblemTypeOrder: Array<ProblemType> = [
   ProblemType.SUBTRACTION,
 ]
 
-export interface ProblemData {
-  [key: string]: number[][]
-}
 type ProblemGroupDictionary<T extends string, U> = {
   [K in T]: U
+}
+export interface ProblemData {
+  [key: string]: number[][]
 }
 
 /* eslint-disable */
