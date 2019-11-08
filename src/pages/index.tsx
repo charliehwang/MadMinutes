@@ -15,7 +15,7 @@ import ProblemTypes from "../components/ProblemTypes"
 
 const IndexPage = () => (
   <Layout>
-    <SEO></SEO>
+    <SEO title="Madminutes"></SEO>
     {/* <div><Container text style={{ marginTop: "7em" }}></Container></div> */}
     <ProblemTypes />
   </Layout>

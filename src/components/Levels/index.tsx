@@ -10,7 +10,7 @@ import * as CONFIG from "../../madminutes-config"
 
 // const defaultProblemTypeOrder = CONFIG.defaultProblemTypeOrder
 
-// const displayLevels = (typeOrder: Array<string>) => {
+// const displayLevels = (problemType: ProblemType) => {
 //   let items: Array<any> = []
 //   typeOrder.forEach((type, i) => {
 //     items.push(
@@ -20,15 +20,25 @@ import * as CONFIG from "../../madminutes-config"
 //       </div>)
 //   })
 //   return items
+//   return <div>{problemType}</div>
 // }
+interface Props {
+  problemType: string
+}
 
-const Levels = () => (
-  <div className="levels">
-    Levels...
+const Levels = ({ problemType }) => {
+  console.log("--->", problemType)
+  return (
+    <div className="levels">
+      {/* Levels...
     <Button>A</Button>
-    <Button>B</Button>
-    {/* {displayLevels(defaultProblemTypeOrder)} */}
-  </div>
-)
+    <Button>B</Button> */}
+      asdfad
+      {problemType}
+      ....
+      {/* {displayLevels(problemType)} */}
+    </div>
+  )
+}
 
-export default Levels 
+export default Levels
