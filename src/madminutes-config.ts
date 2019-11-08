@@ -1,8 +1,8 @@
 export const maxPass = 25
-export const maxTime = "1:15"  // 1:30 = 1 minute and 30 seconds
+export const maxTime = "1:15" // 1:30 = 1 minute and 30 seconds
 
-export const maxPass50 = 50  // maxPass for 50 question quizzes
-export const maxTime50 = "2:30"  // maxTime for 50 question quizzes
+export const maxPass50 = 50 // maxPass for 50 question quizzes
+export const maxTime50 = "2:30" // maxTime for 50 question quizzes
 
 enum ProblemType {
   MULTIPLICATION = "Multiplication",
@@ -25,8 +25,7 @@ type ProblemGroupDictionary<T extends string, U> = {
   [K in T]: U
 }
 
-// prettier-ignore-start
-/*eslint-disable */
+/* eslint-disable */
 export const data: ProblemGroupDictionary<ProblemType, ProblemData> = {
   [ProblemType.MULTIPLICATION]: {
    'A': [
@@ -896,8 +895,7 @@ export const data: ProblemGroupDictionary<ProblemType, ProblemData> = {
     ],
   }, // end sbutraction
 };
-/*eslint-enable */
-// prettier-ignore-end
+/* eslint-enable */
 
 export const passedMessages = [
   "Awesome, you did great!",

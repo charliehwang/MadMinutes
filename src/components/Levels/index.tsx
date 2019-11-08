@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import { Button } from "semantic-ui-react"
 // import * as less from "semantic-ui-less/less"

@@ -1,7 +1,4 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
-
 
 import { Container, Menu } from "semantic-ui-react"
 
@@ -9,7 +6,6 @@ import "semantic-ui-less/semantic.less"
 import "./header.less"
 
 import MadMinutesLogo from "./MadMinutesLogo"
-
 
 interface Props {
   siteTitle: string
